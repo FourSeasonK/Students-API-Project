@@ -93,11 +93,6 @@ searchIcon.addEventListener("click", async function (e) {
 
 function showDetail(index) {
   console.log("here");
-  //let outterDiv = document.createElement("div");
-  //let secondDiv = document.createElement("div");
-  //outterDiv.setAttribute("class", "modal-container");
-  //   secondDiv.setAttribute("class", "modal");
-  //   outterDiv.appendChild(secondDiv);
 
   let htmlStr = "";
   console.log(responseData[index].location.nat);
@@ -125,7 +120,6 @@ function showDetail(index) {
     }</p>
 </div </div>`;
 
-  //outterDiv.innerHTML =  htmlStr;
   document.querySelector("#popupProfile").innerHTML = htmlStr;
 
   console.log(document.querySelector("#popupProfile"));
